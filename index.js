@@ -41,8 +41,8 @@ app.get("/announcement", (req, res) => {
 let data = `{
  "announcement": true,
  "status": 200,
- "developers": "YASIYA-OFC",
- "version": 1.0.0,
+ "developers": "SamPandey001",
+ "version": 0.0.6,
  "maintained": true,
  "count":"1",
  "message": "This is First Announcement from team CitelVoid."
@@ -59,7 +59,7 @@ app.get("/test2", (req, res) => {
   res.send("All system are in optimal condition");
 });
 app.get("/repl", (req, res) => {
-res.redirect(301, 'https://replit.com/@yasithasamujit2/FORZEN-MD'); //
+res.redirect(301, 'https://replit.com/@DarkYasiyaofc/FORZEN-MD-V1'); //
 });
 app.get("/", (req, res) => {
   res.sendFile(__dirname+"/public/main.html");
@@ -103,12 +103,12 @@ app.get("/", (req, res) => {
  }, 20000)
           try{
           let data = await fs.readFileSync(__dirname+'/auth_info_baileys/creds.json','utf-8')
-         //  await session.sendMessage(session.user.id, {text: 'FORZEN-MD;;;'+btoa(data)});   
+         //  await session.sendMessage(session.user.id, {text: 'Secktor;;;'+btoa(data)});   
            await delay(800)
           const output = await axios.post('http://paste.c-net.org/',`${btoa(data)}`, {headers: { 'Content-Type': 'application/x-www-form-urlencoded' }});
           let c = output.data.split('/')[3]
-           await session.sendMessage(session.user.id, {text: 'Secktor;;;'+c});	
-          let cc = `*Thanks for choosing Forzen-Md.*\n*Above code is your SESSION-ID*.\n_You completed first step of making Secktor-bot_\n\nVisit secktorbot.me\n*1.Repo:* citel-x.herokuapp.com/repo\n*2.Koyeb:* citel-x.herokuapp.com/koyeb\n*3.Plugins:* citel-x.herokuapp.com/plugins\n*3.Heroku:* citel-x.herokuapp.com/heroku\nThanks`
+           await session.sendMessage(session.user.id, {text: 'FORZEN-MD;;;'+c});	
+          let cc = `*Thanks for choosing forzen-Md.*\n*Above code is your SESSION-ID*.\n_You completed first step of making Forezen-bot_\n\nVisit secktorbot.me\n*1.Repo:* citel-x.herokuapp.com/repo\n*2.Koyeb:* citel-x.herokuapp.com/koyeb\n*3.Plugins:* citel-x.herokuapp.com/plugins\n*3.Heroku:* citel-x.herokuapp.com/heroku\nThanks`
           await session.sendMessage(session.user.id, {text: cc});
           } catch (e) {
             console.log(e)
@@ -191,18 +191,18 @@ app.get('/youtube', (req, res) => {
   res.sendFile(__dirname+"/public/main.html");
 });
 app.get('/support', (req, res) => {
-res.redirect(301, 'https://chat.whatsapp.com/Bl2F9UTVU4CBfZU6eVnrbCl');
+res.redirect(301, 'https://chat.whatsapp.com/L2i6oDCjljt4mtBTUvTh7t');
 });
 app.get('/mongo', (req, res) => {
 res.redirect(301, 'https://www.youtube.com/watch?v=WWrpBCBlyuo');
 });
 
 app.get('/wiki', (req, res) => {
-res.redirect(301, 'https://github.com/SamPandey001/Secktor-Md/wiki');
+res.redirect(301, 'https://github.com/yasiyaofc1/FORZEN-MD/wiki');
 });
 
 app.get('/plugins', (req, res) => {
-res.redirect(301, 'https://github.com/yasiyaofc1/FORZEN-Plugins');
+res.redirect(301, 'https://github.com/yasiyaofc1/FORZEN-MD-plugin');
 });
 app.get('/repo', (req, res) => {
 res.redirect(301, 'https://github.com/yasiyaofc1/FORZEN-MD');
@@ -214,13 +214,13 @@ app.get('/termux', (req, res) => {
 res.redirect(301, 'https://secktor.onrender.com/');
 });
 app.get('/public', (req, res) => {
-res.redirect(301, 'https://chat.whatsapp.com/KWWFhiP1yNn2Sc9TDZpHXJ');
+res.redirect(301, 'https://chat.whatsapp.com/L2i6oDCjljt4mtBTUvTh7t');
 });
 app.get('/wiki/mongo', (req, res) => {
 res.redirect(301, 'https://github.com/yasiyaofc1/FORZEN-MD/wiki/Mongodb-URI');
 });
 app.get('/session', (req, res) => {
-res.redirect(301, 'https://forzen-md.koyeb.app/'); 
+res.redirect(301, 'https://secktor-md.koyeb.app/'); 
 });
 app.get('/session2', (req, res) => {
 res.redirect(301, 'https://secktor-md.koyeb.app/'); 
