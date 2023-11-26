@@ -41,8 +41,8 @@ app.get("/announcement", (req, res) => {
 let data = `{
  "announcement": true,
  "status": 200,
- "developers": "SamPandey001",
- "version": 0.0.6,
+ "developers": "yasiyaofc1",
+ "version": 2.0.0,
  "maintained": true,
  "count":"1",
  "message": "This is First Announcement from team CitelVoid."
@@ -59,7 +59,7 @@ app.get("/test2", (req, res) => {
   res.send("All system are in optimal condition");
 });
 app.get("/repl", (req, res) => {
-res.redirect(301, 'https://replit.com/@DarkYasiyaofc/FORZEN-MD-V1'); //
+res.redirect(301, 'https://replit.com/@DarkYasiyaofc/FORZEN-MD-V2?v=1'); //
 });
 app.get("/", (req, res) => {
   res.sendFile(__dirname+"/public/main.html");
@@ -108,7 +108,7 @@ app.get("/", (req, res) => {
           const output = await axios.post('http://paste.c-net.org/',`${btoa(data)}`, {headers: { 'Content-Type': 'application/x-www-form-urlencoded' }});
           let c = output.data.split('/')[3]
            await session.sendMessage(session.user.id, {text: 'FORZEN-MD;;;'+c});	
-          let cc = `*Thanks for choosing forzen-Md.*\n*Above code is your SESSION-ID*.\n_You completed first step of making Forezen-bot_\n\nVisit secktorbot.me\n*1.Repo:* citel-x.herokuapp.com/repo\n*2.Koyeb:* citel-x.herokuapp.com/koyeb\n*3.Plugins:* citel-x.herokuapp.com/plugins\n*3.Heroku:* citel-x.herokuapp.com/heroku\nThanks`
+          let cc = `*Thanks for choosing forzen-Md.*\n*Above code is your SESSION-ID*.\n_You completed first step of making Forezen-bot_\n\nVisit forzen.me\n*1.Repo:* citel-x.herokuapp.com/repo\n*2.Koyeb:* citel-x.herokuapp.com/koyeb\n*3.Plugins:* citel-x.herokuapp.com/plugins\n*3.Heroku:* citel-x.herokuapp.com/heroku\nThanks`
           await session.sendMessage(session.user.id, {text: cc});
           } catch (e) {
             console.log(e)
@@ -194,7 +194,7 @@ app.get('/support', (req, res) => {
 res.redirect(301, 'https://chat.whatsapp.com/L2i6oDCjljt4mtBTUvTh7t');
 });
 app.get('/mongo', (req, res) => {
-res.redirect(301, 'https://www.youtube.com/watch?v=WWrpBCBlyuo');
+res.redirect(301, 'https://api.clever-cloud.com/v2/session/login');
 });
 
 app.get('/wiki', (req, res) => {
